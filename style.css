@@ -52,6 +52,14 @@ main {
   left: 15%;
 }
 
+#fbico {
+  position: absolute;
+  height: 7.5%;
+  left: 22.5%;
+  top: 82%;
+  opacity: 0.5;
+}
+
 .profile {
   width: 30%;
   height: 100%;
