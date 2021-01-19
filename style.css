@@ -24,7 +24,7 @@ main {
 .glass {
   position: absolute;
   background: white;
-  min-height: 80%;
+  min-height: 60%;
   width: 80%;
   background: linear-gradient(
     to right bottom,
