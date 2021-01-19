@@ -66,6 +66,7 @@ main {
 
 a {
   text-decoration: none;
+  
 }
 
 .button {
@@ -83,6 +84,12 @@ a {
   position: absolute;
   left: 15%;
   top: 25%;
+}
+
+.contentText1 {
+  position: absolute;
+  left: 15%;
+  top: 40%;
 }
 
 #content {
