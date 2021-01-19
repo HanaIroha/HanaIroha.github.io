@@ -7,9 +7,17 @@
 h1 {
   color:#EC7063;
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 2rem;
   opacity: 0.8;
-  text-shadow: 0 0 3px #ff6e6e;
+  text-shadow: 0 0 1.5px #ff6e6e;
+}
+
+p {
+  color:#EC7063;
+  font-weight: 500;
+  font-size: 1.5rem;
+  opacity: 1;
+  text-shadow: 0 0 1px #ff6e6e;
 }
 
 main {
@@ -24,7 +32,7 @@ main {
 .glass {
   position: absolute;
   background: white;
-  min-height: 60%;
+  min-height: 65%;
   width: 80%;
   background: linear-gradient(
     to right bottom,
@@ -39,12 +47,44 @@ main {
 
 #avatar {
   position: absolute;
-  height: 65%;
-  top:15%;
-  left: 8%;
+  height: 60%;
+  top:20%;
+  left: 15%;
 }
 
 .profile {
   width: 30%;
   height: 100%;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  top: 18%;
+  z-index: 3;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  margin: 0 20px;
+}
+
+.profileText {
+  margin-right: 75px;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+}
+
+.contentText {
+  position: absolute;
+  left: 15%;
+  top: 25%;
+}
+
+#content {
+  display: none;
 }

@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="background effect/sakura.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <script src="background effect/sakura.js" text="text/javascript"></script>
@@ -37,12 +38,30 @@
         maxSize: 14,
         minSize: 10
       });
+      function changeinfor(){
+        $("#content").fadeOut('slow');
+        setTimeout(function(){ $("#infor").fadeIn('slow'); }, 200);
+      }
+      function changecontent(){        
+        $("#infor").fadeOut('slow');
+        setTimeout(function(){ $("#content").fadeIn('slow'); }, 200);       
+      }
     </script>
     <main>
+      <div class="menu">
+        <a class="button" href="#" onclick="changeinfor()"><h1>About me</h1></a>
+        <a class="button" href="#" onclick="changecontent()"><h1>My work</h1></a>
+      </div>
       <section class="glass">
-        <div class="profile">
-          <a href="https://www.facebook.com/iHana.Iroha/" target="_blank"><img id="avatar" src="./images/avatar.png" alt=""/></a> 
-        </div>  
+        <div id="infor">
+          <div class="profile">
+            <a href="https://www.facebook.com/iHana.Iroha/" target="_blank"><img id="avatar" src="./images/avatar.png" alt=""/></a> 
+          </div>
+          <p class="profileText">Chào các bạn nhaa!<br/>Mình là một nhóc sinh viên thích code linh tinh thui~~, hi vọng sẽ có thứ giúp ích cho mọi người.</p>
+        </div>
+        <div id="content">
+          <a href="https://github.com/HanaIroha/Tool-EOP" target="_blank"><p class="contentText"><span style="font-size: 3rem">Bấm vô chữ để lẫy link nhaaaaaaa</span><br/><br/>~~Tool tự động làm unit tiếng anh EOP</p></a>
+        </div> 
       </section>
     </main>
   </body>
