@@ -41,16 +41,24 @@
       });
       function changeinfor(){
         $("#content").fadeOut('slow');
+        $("#files").fadeOut('slow');
         setTimeout(function(){ $("#infor").fadeIn('slow'); }, 200);
+      }
+      function changefiles(){        
+        $("#infor").fadeOut('slow');
+        $("#content").fadeOut('slow');
+        setTimeout(function(){ $("#files").fadeIn('slow'); }, 200);       
       }
       function changecontent(){        
         $("#infor").fadeOut('slow');
+        $("#files").fadeOut('slow');
         setTimeout(function(){ $("#content").fadeIn('slow'); }, 200);       
       }
     </script>
     <main>
       <div class="menu">
         <a class="button" href="#" onclick="changeinfor()"><h1>About me</h1></a>
+        <a class="button" href="#" onclick="changefiles()"><h1>My files</h1></a>
         <a class="button" href="#" onclick="changecontent()"><h1>My work</h1></a>
       </div>
       <section class="glass">
@@ -61,6 +69,9 @@
           <p class="profileText">Rượu vào, code ra! <br/>(Chào các bạn nhé ^^!)</p>
           <a href="https://www.facebook.com/iHana.Iroha/" target="_blank"><img id="fbico" src="./images/fbicon.png" alt=""/></a>
         </div>
+        <div id="files">
+          <a href="https://hanairoha.github.io/myfiles/csgo.cfg" target="_blank"><p class="contentText1">CS:GO config</p></a>
+        </div> 
         <div id="content">
           <p class="contentText"><span style="font-size: 3rem">Bấm vô chữ để vô link :v</span><br/><br/></p>
           <a href="https://github.com/HanaIroha/Tool-EOP" target="_blank"><p class="contentText1">~~Tool tự động làm unit tiếng anh EOP</p></a>
